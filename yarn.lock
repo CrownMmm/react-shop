@@ -10115,6 +10115,14 @@
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
 
+"redux@^4.0.5":
+  "integrity" "sha1-TbXeWBbheJHeioDEJCMtBvBR2T8="
+  "resolved" "https://registry.npm.taobao.org/redux/download/redux-4.0.5.tgz"
+  "version" "4.0.5"
+  dependencies:
+    "loose-envify" "^1.4.0"
+    "symbol-observable" "^1.2.0"
+
 "regenerate-unicode-properties@^8.2.0":
   "integrity" "sha1-5d5xEdZV57pgwFfb6f83yH5lzew="
   "resolved" "https://registry.npm.taobao.org/regenerate-unicode-properties/download/regenerate-unicode-properties-8.2.0.tgz"
@@ -11369,6 +11377,11 @@
     "stable" "^0.1.8"
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
+
+"symbol-observable@^1.2.0":
+  "integrity" "sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ="
+  "resolved" "https://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.2.0.tgz?cache=0&sync_timestamp=1604337940566&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsymbol-observable%2Fdownload%2Fsymbol-observable-1.2.0.tgz"
+  "version" "1.2.0"
 
 "symbol-tree@^3.2.4":
   "integrity" "sha1-QwY30ki6d+B4iDlR+5qg7tfGP6I="

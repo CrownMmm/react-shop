@@ -1,10 +1,10 @@
-import React from "react";
-import { Image, Typography } from "antd";
-import { withRouter, RouteComponentProps, Link } from "react-router-dom";
+import React from 'react';
+import { Image, Typography } from 'antd';
+import { withRouter, RouteComponentProps, Link } from 'react-router-dom';
 
 interface PropsType extends RouteComponentProps {
     id: string | number;
-    size: "large" | "small";
+    size: 'large' | 'small';
     imageSrc: string;
     price: number | string;
     title: string;
@@ -18,14 +18,14 @@ const ProductImageComponent: React.FC<PropsType> = ({
     title,
     history,
     location,
-    match
+    match,
 }) => {
     // console.log(history)
     // console.log(location)
     // console.log(match)
     return (
         <Link to={`detail/${id}`}>
-            {size == "large" ? (
+            {size == 'large' ? (
                 <Image src={imageSrc} height={285} width={490} />
             ) : (
                     <Image src={imageSrc} height={120} width={240} />
