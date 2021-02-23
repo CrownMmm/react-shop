@@ -2633,6 +2633,13 @@
   "resolved" "https://registry.npm.taobao.org/axe-core/download/axe-core-4.1.1.tgz?cache=0&sync_timestamp=1612283822310&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxe-core%2Fdownload%2Faxe-core-4.1.1.tgz"
   "version" "4.1.1"
 
+"axios@^0.21.1":
+  "integrity" "sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg="
+  "resolved" "https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz"
+  "version" "0.21.1"
+  dependencies:
+    "follow-redirects" "^1.10.0"
+
 "axobject-query@^2.2.0":
   "integrity" "sha1-lD1H4QwLcEqkInXiDt83ImSJib4="
   "resolved" "https://registry.npm.taobao.org/axobject-query/download/axobject-query-2.2.0.tgz?cache=0&sync_timestamp=1592784702868&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxobject-query%2Fdownload%2Faxobject-query-2.2.0.tgz"
@@ -5345,7 +5352,7 @@
     "inherits" "^2.0.3"
     "readable-stream" "^2.3.6"
 
-"follow-redirects@^1.0.0":
+"follow-redirects@^1.0.0", "follow-redirects@^1.10.0":
   "integrity" "sha1-3XPI7/wScoulz0JZ12DqX7g+MUc="
   "resolved" "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.13.2.tgz"
   "version" "1.13.2"
@@ -10170,6 +10177,11 @@
   dependencies:
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
+
+"redux-thunk@^2.3.0":
+  "integrity" "sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI="
+  "resolved" "https://registry.npm.taobao.org/redux-thunk/download/redux-thunk-2.3.0.tgz"
+  "version" "2.3.0"
 
 "redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", "redux@^4.0.0", "redux@^4.0.5":
   "integrity" "sha1-TbXeWBbheJHeioDEJCMtBvBR2T8="
