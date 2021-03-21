@@ -8,7 +8,6 @@ import {
   BusinessPartners,
 } from '../../components';
 import { Row, Col, Typography, Spin } from 'antd';
-// import { productList1, productList2, productList3 } from './mockups';
 import sideImage from '../../assets/images/sider_2019_12-09.png';
 import sideImage2 from '../../assets/images/sider_2019_02-04.png';
 import sideImage3 from '../../assets/images/sider_2019_02-04-2.png';
@@ -38,17 +37,15 @@ const mapDispatchToProps = (dispatch) => {
 type PropsType = WithTranslation &
   ReturnType<typeof mapStateToProps> &
   ReturnType<typeof mapDispatchToProps>;
+
 class HomePageComponent extends React.Component<PropsType> {
-  // this.props.fetchStart()
   componentDidMount() {
     this.props.giveMeData();
   }
 
   render() {
     // console.log(this.props.t)
-    const { t } = this.props;
-    const { productList, loading, error } = this.props;
-
+    const { t, productList, loading, error } = this.props;
     if (loading) {
       return (
         <Spin
