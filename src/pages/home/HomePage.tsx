@@ -17,7 +17,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { giveMeDataActionCreator } from '../../redux/recommendProducts/recommendProductsActions';
-import { MainLayout } from '../../layouts/mainLayout/MainLayout';
+import { MainLayout } from '../../layouts/mainLayout';
 
 const mapStateToProps = (state: RootState) => {
   return {
