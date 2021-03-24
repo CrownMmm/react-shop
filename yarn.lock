@@ -10190,12 +10190,17 @@
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
 
+"redux-persist@^6.0.0":
+  "integrity" "sha1-tNKXL5hZWXwTDUDUsUb+zatRs6g="
+  "resolved" "https://registry.npm.taobao.org/redux-persist/download/redux-persist-6.0.0.tgz"
+  "version" "6.0.0"
+
 "redux-thunk@^2.3.0":
   "integrity" "sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI="
   "resolved" "https://registry.npm.taobao.org/redux-thunk/download/redux-thunk-2.3.0.tgz"
   "version" "2.3.0"
 
-"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", "redux@^4.0.0", "redux@^4.0.5":
+"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", "redux@^4.0.0", "redux@^4.0.5", "redux@>4.0.0":
   "integrity" "sha1-TbXeWBbheJHeioDEJCMtBvBR2T8="
   "resolved" "https://registry.npm.taobao.org/redux/download/redux-4.0.5.tgz"
   "version" "4.0.5"
