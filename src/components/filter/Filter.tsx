@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import { FilterTag } from "./FilterTag";
-import { Typography, Divider } from "antd";
+import React from 'react';
+import { FilterTag } from './FilterTag';
+import { Typography, Divider } from 'antd';
 const { Text } = Typography;
 
 interface PropsType {
@@ -12,7 +12,7 @@ export const Filter: React.FC<PropsType> = ({ title, tags }) => {
   return (
     <div>
       <Text style={{ marginRight: 40, fontSize: 15, fontWeight: 500 }}>
-        {title} :{" "}
+        {title} :{' '}
       </Text>
       {tags.map((t, index) => {
         if (index === tags.length - 1)

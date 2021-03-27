@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  Header,
-  Footer,
   Carousel,
   SideMenu,
   ProductCollection,
@@ -11,9 +9,7 @@ import { Row, Col, Typography, Spin } from 'antd';
 import sideImage from '../../assets/images/sider_2019_12-09.png';
 import sideImage2 from '../../assets/images/sider_2019_02-04.png';
 import sideImage3 from '../../assets/images/sider_2019_02-04-2.png';
-import styles from './HomePage.module.css';
 import { withTranslation, WithTranslation } from 'react-i18next';
-import axios from 'axios';
 import { connect } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { giveMeDataActionCreator } from '../../redux/recommendProducts/recommendProductsActions';
@@ -45,7 +41,6 @@ class HomePageComponent extends React.Component<PropsType> {
   }
 
   render() {
-    // console.log(this.props.t)
     const { t, productList, loading, error } = this.props;
     if (loading) {
       return (

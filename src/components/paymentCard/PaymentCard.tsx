@@ -1,17 +1,7 @@
-import React, { useEffect } from "react";
-import {
-  Skeleton,
-  Switch,
-  Card,
-  Avatar,
-  Button,
-  Typography,
-  Space,
-  Tag,
-  Table,
-} from "antd";
-import { DeleteOutlined, CheckCircleOutlined } from "@ant-design/icons";
-import { ColumnsType } from "antd/es/table";
+import React from 'react';
+import { Skeleton, Card, Button, Typography, Table } from 'antd';
+import { DeleteOutlined, CheckCircleOutlined } from '@ant-design/icons';
+import { ColumnsType } from 'antd/es/table';
 
 const { Meta } = Card;
 const { Title, Text } = Typography;
@@ -24,14 +14,14 @@ interface Item {
 
 const columns: ColumnsType<Item> = [
   {
-    title: "项目",
-    dataIndex: "item",
-    key: "item",
+    title: '项目',
+    dataIndex: 'item',
+    key: 'item',
   },
   {
-    title: "金额",
-    dataIndex: "amount",
-    key: "amount",
+    title: '金额',
+    dataIndex: 'amount',
+    key: 'amount',
   },
 ];
 
@@ -53,12 +43,12 @@ export const PaymentCard: React.FC<PropsType> = ({
   const paymentData: Item[] = [
     {
       key: 1,
-      item: "原价",
+      item: '原价',
       amount: <Text delete>¥ {originalPrice}</Text>,
     },
     {
       key: 3,
-      item: "现价",
+      item: '现价',
       amount: (
         <Title type="danger" level={2}>
           ¥ {price}

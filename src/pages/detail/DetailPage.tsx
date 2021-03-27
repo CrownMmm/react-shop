@@ -1,20 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { RouteComponentProps, useParams } from 'react-router-dom';
-import axios from 'axios';
 import { Spin, Row, Col, Divider, Typography, Anchor, Menu } from 'antd';
 import styles from './DetailPage.module.css';
-import {
-  Header,
-  Footer,
-  ProductIntro,
-  ProductComments,
-} from '../../components';
-import { DatePicker, Space, Button } from 'antd';
+import { ProductIntro, ProductComments } from '../../components';
+import { DatePicker, Button } from 'antd';
 import { commentMockData } from './mockup';
-import {
-  productDetailSlice,
-  getProductDetail,
-} from '../../redux/productDetail/slice';
+import { getProductDetail } from '../../redux/productDetail/slice';
 import { useSelector } from '../../redux/hooks';
 import { useDispatch } from 'react-redux';
 import { MainLayout } from '../../layouts/mainLayout';
