@@ -8463,6 +8463,13 @@
   "resolved" "https://registry.npm.taobao.org/path-type/download/path-type-4.0.0.tgz"
   "version" "4.0.0"
 
+"payment@^2.3.0":
+  "integrity" "sha1-sqlenDBSRZZH2jkmuLZsVT2TCY8="
+  "resolved" "https://registry.npm.taobao.org/payment/download/payment-2.3.0.tgz"
+  "version" "2.3.0"
+  dependencies:
+    "qj" "~2.0.0"
+
 "pbkdf2@^3.0.3":
   "integrity" "sha1-y4cksPramEWWhW0abrr9NYRlS5Q="
   "resolved" "https://registry.npm.taobao.org/pbkdf2/download/pbkdf2-3.1.1.tgz"
@@ -9456,6 +9463,11 @@
   "resolved" "https://registry.npm.taobao.org/q/download/q-1.5.1.tgz"
   "version" "1.5.1"
 
+"qj@~2.0.0":
+  "integrity" "sha1-BU3Tt1zgGHKNI6BgXwMN/aC9FYo="
+  "resolved" "https://registry.npm.taobao.org/qj/download/qj-2.0.0.tgz"
+  "version" "2.0.0"
+
 "qs@~6.5.2":
   "integrity" "sha1-yzroBuh0BERYTvFUzo7pjUA/PjY="
   "resolved" "https://registry.npm.taobao.org/qs/download/qs-6.5.2.tgz?cache=0&sync_timestamp=1610598227383&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fqs%2Fdownload%2Fqs-6.5.2.tgz"
@@ -9882,6 +9894,13 @@
     "regenerator-runtime" "^0.13.7"
     "whatwg-fetch" "^3.4.1"
 
+"react-credit-cards@^0.8.3":
+  "integrity" "sha1-YIqO6L86iIV/yDAj/7oa1Ta6jH4="
+  "resolved" "https://registry.npm.taobao.org/react-credit-cards/download/react-credit-cards-0.8.3.tgz"
+  "version" "0.8.3"
+  dependencies:
+    "payment" "^2.3.0"
+
 "react-dev-utils@^11.0.1":
   "integrity" "sha1-MBBsIFWs/WsEfS3EeKhcNW5m/kU="
   "resolved" "https://registry.npm.taobao.org/react-dev-utils/download/react-dev-utils-11.0.1.tgz"
@@ -10075,7 +10094,7 @@
   optionalDependencies:
     "fsevents" "^2.1.3"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.3 || ^17", "react@^17.0.1", "react@>= 16.8.0", "react@>= 16.9.0", "react@>=15", "react@>=16.0.0", "react@>=16.9.0":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.0.0 || ^16.0.0", "react@^16.8.3 || ^17", "react@^17.0.1", "react@>= 16.8.0", "react@>= 16.9.0", "react@>=15", "react@>=16.0.0", "react@>=16.9.0":
   "integrity" "sha1-bgYAQWvVdXTj+G2S7bo9kAhyYSc="
   "resolved" "https://registry.npm.taobao.org/react/download/react-17.0.1.tgz"
   "version" "17.0.1"
