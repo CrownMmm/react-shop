@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { List, Rate, Space, Image, Tag, Typography } from "antd";
-import { MessageOutlined, LikeOutlined, StarOutlined } from "@ant-design/icons";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { List, Rate, Space, Image, Tag, Typography } from 'antd';
+import { MessageOutlined, LikeOutlined, StarOutlined } from '@ant-design/icons';
 
 const { Text } = Typography;
 
@@ -20,7 +20,7 @@ interface Product {
 }
 interface PropsType {
   data: Product[];
-  paging: any;
+  paging?: any;
   onPageChange?: (nextPage, pageSize) => void;
 }
 
@@ -61,17 +61,24 @@ export const ProductList: React.FC<PropsType> = ({
     <List
       itemLayout="vertical"
       size="large"
-      pagination={{
-        current: paging.currentPage,
-        onChange: (page) => onPageChange && onPageChange(page, paging.pageSize),
-        pageSize: paging.pageSize,
-        total: paging.totalCount,
-      }}
+      pagination={
+        paging
+          ? {
+              current: paging.currentPage,
+              onChange: (page) =>
+                onPageChange && onPageChange(page, paging.pageSize),
+              pageSize: paging.pageSize,
+              total: paging.totalCount,
+            }
+          : false
+      }
       dataSource={products}
       footer={
-        <div>
-          搜索总路线: <Text strong>{paging.totalCount}</Text> 条
-        </div>
+        paging && (
+          <div>
+            搜索总路线: <Text strong>{paging.totalCount}</Text> 条
+          </div>
+        )
       }
       renderItem={(item) => (
         <List.Item
@@ -110,7 +117,7 @@ export const ProductList: React.FC<PropsType> = ({
                       type="danger"
                       style={{ fontSize: 20, fontWeight: 400 }}
                     >
-                      {" "}
+                      {' '}
                       ¥ {item.price}
                     </Text>
                   </>
@@ -119,7 +126,7 @@ export const ProductList: React.FC<PropsType> = ({
                     ¥ {item.price}
                   </Text>
                 )}
-                <Link to={"/detail/" + item.id}> {item.title}</Link>
+                <Link to={'/detail/' + item.id}> {item.title}</Link>
               </>
             }
             description={item.tags}

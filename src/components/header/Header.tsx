@@ -11,8 +11,9 @@ import {
 } from 'react-router-dom';
 import { useSelector } from '../../redux/hooks';
 import { useDispatch } from 'react-redux';
+import { Dispatch } from 'redux';
 import {
-  //   LanguageActionTypes,
+  LanguageActionTypes,
   addLanguageActionCreator,
   changeLanguageActionCreator,
 } from '../../redux/language/languageActions';
@@ -38,6 +39,9 @@ export const Header: React.FC = () => {
   const jwt = useSelector((s) => s.user.token);
   const [username, setUsername] = useState('');
 
+  const shoppingCartItems = useSelector((s) => s.shoppingCart.items);
+  const shoppingCartLoading = useSelector((s) => s.shoppingCart.loading);
+
   useEffect(() => {
     if (jwt) {
       const token = jwt_decode<JwtPayload>(jwt);
@@ -46,6 +50,7 @@ export const Header: React.FC = () => {
   }, [jwt]);
 
   const menuClickHandler = (e) => {
+    console.log(e);
     if (e.key === 'new') {
       // 处理新语言添加action
       dispatch(addLanguageActionCreator('新语言', 'new_lang'));
@@ -87,8 +92,11 @@ export const Header: React.FC = () => {
                 {t('header.welcome')}
                 <Typography.Text strong>{username}</Typography.Text>
               </span>
-              <Button onClick={() => history.push('/shoppingCart')}>
-                {t('header.shoppingCart')}
+              <Button
+                loading={shoppingCartLoading}
+                onClick={() => history.push('/shoppingCart')}
+              >
+                {t('header.shoppingCart')}({shoppingCartItems.length})
               </Button>
               <Button onClick={onLogout}>{t('header.signOut')}</Button>
             </Button.Group>
